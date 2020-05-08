@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/eventparent"
+        android:layout_width="186dp"
+        android:layout_height="185dp"
+        android:background="@drawable/bgitemcustom"
+        android:orientation="vertical"
+        android:scaleX="0.7"
+        android:scaleY="0.7">
+
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+            android:layout_width="184dp"
+            android:layout_height="186dp"
+            app:shape_roundRect_topLeftRadius="8dp"
+            app:shape_roundRect_topRightRadius="8dp">
+
+            <ImageView
+                android:id="@+id/eventpicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/picone" />
+
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+    </LinearLayout>
+
+</LinearLayout>

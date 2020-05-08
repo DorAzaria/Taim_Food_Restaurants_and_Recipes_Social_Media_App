@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".RecipeActivity">
+
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/appbar" />
+
+    <EditText
+        android:id="@+id/recipe_title_editor"
+        android:layout_width="400dp"
+        android:layout_height="34dp"
+        android:background="@color/white"
+        android:backgroundTint="#E3E3E3"
+        android:hint="שם המתכון"
+        android:textAlignment="viewEnd"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <EditText
+        android:id="@+id/recipe_title_short"
+        android:layout_width="400dp"
+        android:layout_height="39dp"
+        android:background="@color/white"
+        android:backgroundTint="#E3E3E3"
+        android:hint="תקציר המנה"
+        android:textAlignment="viewEnd"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_title_editor"
+        app:layout_constraintVertical_bias="0.393" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/write_new_ingredients_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include3">
+
+        <Spinner
+            android:id="@+id/spinnerRecipeType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/radio_choice_recipe"
+        android:layout_width="191dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="68dp"
+        android:background="@color/mainYellow"
+        app:layout_constraintBottom_toTopOf="@+id/write_new_ingredients_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/constraintLayout2"
+        android:layout_width="304dp"
+        android:layout_height="35dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/include3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="25dp">
+
+
+        <CheckBox
+            android:id="@+id/checkbox_meat"
+            android:layout_width="57dp"
+            android:layout_height="32dp"
+            android:layoutDirection="rtl"
+            android:text="בשרי"
+            android:textAlignment="textStart"
+            android:textSize="10dp"
+            app:layout_constraintStart_toEndOf="@+id/checkbox_cheese"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkbox_vegan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:text="טבעוני"
+            android:textAlignment="textStart"
+            android:textSize="10dp"
+            app:layout_constraintStart_toEndOf="@+id/checkbox_no_gluten"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkbox_cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:text="חלבי"
+            android:textAlignment="textStart"
+            android:textSize="10dp"
+            app:layout_constraintStart_toEndOf="@+id/checkbox_green"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkbox_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:text="צמחוני"
+            android:textAlignment="textStart"
+            android:textSize="10dp"
+            app:layout_constraintStart_toEndOf="@+id/checkbox_vegan"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkbox_no_gluten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:text="ללא גלוטן"
+            android:textAlignment="textStart"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/write_new_recipe_btnn"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        android:background="@drawable/custom_bggradient"
+        android:text="כתיבת
+         המתכון"
+        app:layout_constraintBottom_toTopOf="@+id/new_video_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_title_editor"
+        app:layout_constraintVertical_bias="0.869" />
+
+    <Button
+        android:id="@+id/write_new_ingredients_btn"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/custom_bggradient"
+        android:text="הוספת
+         מצרכים"
+        app:layout_constraintBottom_toTopOf="@+id/new_image_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toEndOf="@+id/write_new_recipe_btn"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_title_editor"
+        app:layout_constraintVertical_bias="0.869" />
+
+    <Button
+        android:id="@+id/new_video_btn"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        android:background="@drawable/custom_bggradient"
+        android:text="הוספת
+        סרטון"
+        app:layout_constraintBottom_toTopOf="@+id/new_upload_recipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_title_editor"
+        app:layout_constraintVertical_bias="0.962" />
+
+    <Button
+        android:id="@+id/new_image_btn"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        android:background="@drawable/custom_bggradient"
+        android:text="הוספת
+        תמונות"
+        app:layout_constraintBottom_toTopOf="@+id/new_upload_recipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintStart_toEndOf="@+id/new_video_btn"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_title_editor"
+        app:layout_constraintVertical_bias="0.962" />
+
+    <Button
+        android:id="@+id/new_upload_recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_bggradient"
+        android:text="פרסם מתכון"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_title_editor"
+        app:layout_constraintVertical_bias="0.938" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

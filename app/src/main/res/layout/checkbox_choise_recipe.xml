@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="right">
+
+    <CheckBox android:id="@+id/checkbox_meat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="בשרי"
+        android:textSize="10dp"
+        android:layout_margin="4dp"
+        android:textAlignment="textStart"
+        android:layoutDirection="rtl"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_vegan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layoutDirection="rtl"
+        android:onClick="onCheckboxClicked"
+        android:text="טבעוני"
+        android:textAlignment="textStart"
+        android:textSize="10dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_cheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layoutDirection="rtl"
+        android:onClick="onCheckboxClicked"
+        android:text="חלבי"
+        android:textAlignment="textStart"
+        android:textSize="10dp" />
+
+    <CheckBox android:id="@+id/checkbox_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="צמחוני"
+        android:textSize="10dp"
+        android:layout_margin="4dp"
+        android:textAlignment="textStart"
+        android:layoutDirection="rtl"
+        android:onClick="onCheckboxClicked"/>
+    <CheckBox android:id="@+id/checkbox_no_gluten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ללא גלוטן"
+        android:layout_margin="4dp"
+        android:textSize="10dp"
+        android:textAlignment="textStart"
+        android:layoutDirection="rtl"
+        android:onClick="onCheckboxClicked"/>
+</LinearLayout>

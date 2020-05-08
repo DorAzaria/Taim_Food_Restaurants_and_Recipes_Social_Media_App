@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">טעים</string>
+    <string name="Email">Email</string>
+    <string name="אימייל">אימייל</string>
+    <string name="סיסמה">סיסמה</string>
+    <string name="התחבר">התחבר</string>
+    <string name="התנתק">התנתק</string>
+    <string name="להרשמה">להרשמה</string>
+    <string name="הרשם">הרשם</string>
+    <string name="טעים">טעים</string>
+    <string name="שםפרטי">שם פרטי</string>
+    <string name="שםמשפחה">שם משפחה</string>
+    <string name="username">שם משתמש</string>
+    <string name="name">משתמש חדש</string>
+    <string name="address">עיר, ישראל</string>
+    <string name="str_btn_follow">עריכת פרופיל</string>
+    <string name="followers">עוקב</string>
+    <string name="following">עוקבים אחריו</string>
+    <string name="posts">מתכונים</string>
+    <string name="information">מידע נוסף</string>
+    <string name="birth">תאריך לידה</string>
+    <string name="hp">צור קשר</string>
+    <string name="יישובמגורים">יישוב מגורים</string>
+    <string name="תאריךלידה">תאריך לידה</string>
+    <string name="קצתעלעצמי">קצת על עצמי</string>
+    <string name="עדכןפרופיל">עדכן פרופיל</string>
+
+
+</resources>

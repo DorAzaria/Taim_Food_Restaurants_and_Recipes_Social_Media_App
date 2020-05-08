@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/slider_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderCircularHandlerEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="1"
+        app:sliderStartAutoCycle="true">
+
+    </com.smarteist.autoimageslider.SliderView>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@color/mainRed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <FrameLayout
+        android:id="@+id/view"
+        android:layout_width="326dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/custom_bggradient"
+        android:outlineAmbientShadowColor="#D8D5D5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/slider_view"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/slider_view"
+        app:layout_constraintTop_toTopOf="@+id/slider_view"
+        app:layout_constraintVertical_bias="0.022">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/eventsplace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:clipToPadding="false"
+            android:paddingRight="250dp">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </FrameLayout>
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/appbar" />
+
+    <Button
+        android:id="@+id/buttontoCharts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="המצעד"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/searchView" />
+
+    <Button
+        android:id="@+id/recipeTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="לבדיקת מתכון"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttontoCharts" />
+
+    <Button
+        android:id="@+id/buttontoNewRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="כתיבת מתכון"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttontoCharts" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

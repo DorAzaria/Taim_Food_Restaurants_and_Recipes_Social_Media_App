@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="6dp">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginStart="30dp"
+            android:background="@color/mainYellow"/>
+        <TextView
+            android:id="@+id/ingredientName"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="150dp"
+            android:text="סוג מצרך"
+            android:textSize="10sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/ingredientSum"
+            android:layout_width="130dp"
+            android:layout_height="20dp"
+            android:text="כמות"
+            android:textSize="10sp"
+            android:layout_marginStart="15dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

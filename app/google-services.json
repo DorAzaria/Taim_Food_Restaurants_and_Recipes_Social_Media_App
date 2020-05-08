@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "118140198859",
+    "firebase_url": "https://taim-468f4.firebaseio.com",
+    "project_id": "taim-468f4",
+    "storage_bucket": "taim-468f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118140198859:android:73ab8b9cc0a102669ae04e",
+        "android_client_info": {
+          "package_name": "food.taim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118140198859-v2brr3vg2fj0i71fhcf61dqfdkjdb8dj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "food.taim",
+            "certificate_hash": "648b2491a4d012beb44004f258eaac9f65d7d39c"
+          }
+        },
+        {
+          "client_id": "118140198859-smis298dsber0mn7u6hoo5u11a1f7kup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkgqbSIZTHhSCzIEjLzsl3MQuC4t3GqY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118140198859-smis298dsber0mn7u6hoo5u11a1f7kup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

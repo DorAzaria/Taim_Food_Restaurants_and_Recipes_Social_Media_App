@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:gravity="right"
+    android:background="@color/white"
+    android:id="@+id/radioGroupKosheEdit">
+
+    <RadioButton
+        android:id="@+id/noKosherOption"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_margin="4dp"
+        android:layoutDirection="rtl"
+        android:text="לא כשר"
+        android:textAlignment="textStart"
+        android:textDirection="rtl"
+        android:textSize="10dp" />
+
+    <RadioButton
+        android:id="@+id/yesKosherOption"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_margin="4dp"
+        android:layoutDirection="rtl"
+        android:text="כשר"
+        android:textAlignment="textStart"
+        android:textDirection="rtl"
+        android:textSize="10dp" />
+
+
+</RadioGroup>

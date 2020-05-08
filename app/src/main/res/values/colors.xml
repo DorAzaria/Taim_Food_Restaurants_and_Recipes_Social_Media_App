@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#e32929</color>
+    <color name="colorAccent">#e32929</color>
+    <item name="black" type="color">#FF000000</item>
+    <item name="white" type="color">#FFFFFFFF</item>
+    <item name="light_black" type="color">#55EEEEEE</item>
+    <item name="blue" type="color">#FF3498db</item>
+    <item name="primary_color" type="color">#e32929</item>
+    <item name="mainRed" type="color">#e32929</item>
+    <item name="mainYellow" type="color">#ffb80e</item>
+    <item name="orange" type="color">#ff611d</item>
+    <item name="brown" type="color">#813531</item>
+    <item name="red2" type="color">#982121</item>
+
+
+
+</resources>
