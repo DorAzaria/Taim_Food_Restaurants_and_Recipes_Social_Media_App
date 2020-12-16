@@ -1,4 +1,4 @@
-# Taim - Social Media App for Food, Restaurants and Recipes (DEMO).
+# Taim - Social Media App for Food, Restaurants and Recipes (DEMO - Hebrew Version).
 
 * android users.
 * registration & login system!
